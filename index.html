@@ -1,177 +1,342 @@
+<!-- Doctype HTML5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Steven Cao's Web Portfolio</title>
-	<!-- Required meta tags -->
+	<!-- Set character encoding for the document -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Instruct Internet Explorer to use its latest rendering engine -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Viewport for responsive web design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<meta name="author" content="Steven Cao">
+	<meta name="description" content="Online Porfolio of Steven Cao">
+	
+	<title>Steven Cao | Application Developer</title>
+	
+	<!-- Standard favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<!-- Recommended favicon format -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Customised CSS -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Optional attributes -->
-	<base target="_blank">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-light">
-	
+<body>
+	<!-- into progress bar -->
+	<div class="background-intro">
+		<div class="progress-bar-background">
+			<div class="intro-progress-bar progress-bar-striped progress-bar-animated bg-success">0%</div>
+		</div>
+	</div>
+	</div>
 
-	<div id="main">
-		<!-- <div class="container-fluid"> -->
+	<main>
+		<!-- top jumbotron -->
+		<div class="background-top">
+			<div class="container-fluid">
+				<!-- top navigation bar -->
+				<div class="row fixed-top" id="top-nav">
+					<div class="col-6 brand">steven cao</div>
+					<div class="col-6">
+						  <div class="x-icon float-right">
+						    <div class="bar1"></div>
+						    <div class="bar2"></div>
+						    <div class="bar3"></div>
+						  </div>
+					</div>
+				</div>
+				<!-- header -->
+				<div class="row header" id="top-header">
+					<div class="col text-center text-white">
+						<div class="font-weight-light text-uppercase name-header">Steven Cao</div>
+						<div class="font-weight-light role-header">Full Stack Developer for Web and Mobile applications.</div>
+					</div>
+				</div>
+				<!-- transition icon -->
+				<a href="#about-me">
+					<div class="transition-icon">
+						<span class="arrow-down"></span>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- about me -->
+		<div class="background-about-me" id="about-me">
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-9">
-					<!-- Top Navbar -->
-					<div class="mx-auto">
-						<nav class="navbar navbar-light bg-light">
-							<a class="navbar-brand" href="#">Steven Cao</a>
+				<div class="col text-center about-me">
+					<div class="display-4 text-uppercase">About Me</div>
+					<div class="line-breaker mx-auto mt-2 mb-5"></div>
+					<div class="w-75 text-center mx-auto text-muted mb-5">
+						I'm a Full Stack Developer with more than 5 years experience creating elegant websites and business class applications.
+						Currently, I am working as Senior Software Developer for <a href="http://www.chekrite.com" class="link" target="_blank">ChekRite</a>, a company spacilising in data capture system for managing all inspections and checklists needs.
+						I consider myself to be responsible, hardworking and eager to learn and explore new knowledge.
+					</div>
 
-							<!-- Links to external sites -->
-							<ul class="nav flex-row ml-md-auto d-none d-md-flex">
-								<li class="nav-item">
-									<a class="nav-link" href="https://steven-cao88.github.io">
-										<i class="fa fa-github fa-2x text-muted" aria-hidden="true"></i>
-										<span class="sr-only">(Github)</span>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="https://codepen.io/steven-cao/">
-										<i class="fa fa-codepen fa-2x text-muted" aria-hidden="true"></i>
-										<span class="sr-only">(Codepen)</span>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="https://www.freecodecamp.org/steven-cao88">
-										<i class="fa fa-free-code-camp fa-2x text-muted" aria-hidden="true"></i>
-										<span class="sr-only">(Free Code Camp)</span>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="https://stackoverflow.com/users/8374284/steven-cao">
-										<i class="fa fa-stack-overflow fa-2x text-muted" aria-hidden="true"></i>
-										<span class="sr-only">(Stack Overflow)</span>
-									</a>
-								</li>
-							</ul>
+					<!-- what I do -->
+					<div class="display-4 text-uppercase" id="what-i-do">What I do</div>
+					<div class="line-breaker mx-auto mt-2 mb-4"></div>
+					<div class="card-group mb-5">
+					  <div class="card border-0" id="website">
+					    <div class="card-body">
+					      	<h4 class="card-title">
+					      		<i class="fa fa-compass fa-3x orange" aria-hidden="true"></i> <br>
+					      		Websites
+					  		</h4>
+					      <p class="card-text text-muted">I created many responsive and elegant websites for research and commercial companies. Many of them created using WordPress with customised theme and plugins.</p>
+					    </div>
+					  </div>
+					  <div class="card border-0" id="web-application">
+					    <div class="card-body">
+					    	<h4 class="card-title">
+					    		<i class="fa fa-tachometer fa-3x orange" aria-hidden="true"></i> <br>
+					    		Web Applications
+					    	</h4>
+					      <p class="card-text text-muted">I built many web applications from booking, claiming systems to online portals. I also designed and developed the core platform for several complex intranet system.</p>
+					    </div>
+					  </div>
+					  <div class="card border-0" id="web-api">
+					    <div class="card-body">
+					     	<h4 class="card-title">
+					     		<i class="fa fa-code fa-3x orange" aria-hidden="true"></i> <br>
+					     		Web APIs
+					     	</h4>
+					      <p class="card-text text-muted">I am experienced in creating RESTful APIs to allow mobile applications to integrate with web portals.</p>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+		<!-- timeline -->
+		<div class="background-timeline" id="timeline">
+			<div class="row">
+				<div class="col text-center timeline-row">
+					<div class="display-4 text-uppercase">Timeline</div>
+					<div class="line-breaker mx-auto mt-2 mb-5"></div>
+					<div class="timeline">
+						<div class="timeline-item timeline-left">
+							<div class="timeline-content year-2017">
+								<h2>2017</h2>
+								<p>Working for <a href="http://www.chekrite.com" target="_blank" class="link">ChekRite</a> as Senior Software Developer</p>
 							</div>
-
-						</nav>
-					</div>
-				</div>
-				<div class="col-1">
-					<div class="d-inline-flex flex-column pt-3 menu-icon-container">
-						<div class="menu-icon bg-secondary bar1"></div>
-						<div class="menu-icon bg-secondary bar2"></div>
-						<div class="menu-icon bg-secondary bar3"></div>
-					</div>
-				</div>
-			</div>
-		<!-- </div> -->
-
-
-		<!-- Jumbotron -->
-		<div class="jumbotron bg-light mb-0 text-center">
-			<h1 class="display-3">Hello, world!</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-			<hr class="my-4">
-			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<p class="lead">
-				<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-			</p>
-		</div>
-
-
-		<div class="container-fluid bg-light">
-			<!-- Card Column -->
-			<div class="card-columns">
-				<div class="card">
-					<img class="card-img-top" src="http://via.placeholder.com/246x160" alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Card title that wraps to a new line</h4>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<blockquote class="blockquote mb-0 card-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="http://via.placeholder.com/246x160" alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card bg-primary text-white text-center p-3">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-						<footer class="blockquote-footer">
-							<small>
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card text-center">
-					<div class="card-body">
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img" src="http://via.placeholder.com/246x160" alt="Card image">
-				</div>
-				<div class="card p-3 text-right">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+						<div class="timeline-item timeline-right">
+							<div class="timeline-content year-2012">
+								<h2>2012</h2>
+								<p>Working for <a href="http://www.tll.org.sg" target="_blank" class="link">Temasek Life Sciences</a> as Web Developer</p>
+							</div>
+						</div>
+						<div class="timeline-item timeline-left">
+							<div class="timeline-content year-2011">
+								<h2>2011</h2>
+								<p>Working for <a href="https://www.ncs.com.sg" target="_blank" class="link">NCS</a> as Application Developer</p>
+							</div>
+						</div>
+						<div class="timeline-item timeline-right">
+							<div class="timeline-content year-2009">
+								<h2>2009</h2>
+								<p>Working for <a href="http://www.nus.edu.sg" class="link">National University of Singapore</a> as Teaching Assistant</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- gallery -->
+		<div class="background-gallery mb-5" id="gallery">
+			<div class="row">
+				<div class="col text-center gallery">
+					<div class="display-4 text-uppercase">Gallery</div>
+					<div class="line-breaker mx-auto mt-2 mb-4"></div>
+					<div class="container">
+						<!-- Card Column -->
+						<div class="card-columns">
+							<div class="card">
+								<img class="card-img-top" src="images/chekrite-website.png" alt="ChekRite Website">
+							</div>
+							<div class="card p-3 text-left">
+								<blockquote class="blockquote mb-0">
+									<p>Steven involved in all parts of our software development life cycles</p>
+									<footer class="blockquote-footer">
+										<small class="text-muted">
+											Mohamad Faidzal, <em>Assistant Director - TLL</em>
+										</small>
+									</footer>
+								</blockquote>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/tll-website2.png" alt="TLL Website">
+							</div>
+							<div class="card p-3">
+								<blockquote class="blockquote mb-0 card-body">
+									<p>Steven is in charge of developing our portal and web API</p>
+									<footer class="blockquote-footer">
+										<small class="text-muted">
+											Jordan Millar,  <em>Founder &amps; CEO, ChekRite</em>
+										</small>
+									</footer>
+								</blockquote>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/tll-intranet1.png" alt="TLL Intranet">
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/chekrite-portal.png" alt="ChekRite Portal">
+							</div>
+							<div class="card p-3 text-right">
+								<blockquote class="blockquote mb-0">
+									<p>Steven is a passionate developer and reliable team member</p>
+									<footer class="blockquote-footer">
+										<small class="text-muted">
+											Johannes Mabulay,  <em>Software Architect, TLL</em>
+										</small>
+									</footer>
+								</blockquote>
+							</div>
+							<div class="card">
+								<img class="card-img-top" src="images/tll-intranet2.png" alt="TLL Intranet">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- location -->
+		<div class="background-location" id="location">
+			<!-- <div class="container-fluid"> -->
+				<div class="row">
+					<div class="col text-center map">
+						<div class="display-4 text-uppercase">Location</div>
+						<div class="line-breaker mx-auto mt-2 mb-5"></div>
+						<div id="map">
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-11">
+						<ul class="nav justify-content-end d-flex">
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/in/steven-cao">
+									<i class="fa fa-2x fa-linkedin text-muted" aria-hidden="true"></i>
+									<span class="sr-only">(LinkedIn)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://steven-cao88.github.io">
+									<i class="fa fa-2x fa-github text-muted" aria-hidden="true"></i>
+									<span class="sr-only">(Github)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://codepen.io/steven-cao/">
+									<i class="fa fa-2x fa-codepen text-muted" aria-hidden="true"></i>
+									<span class="sr-only">(Codepen)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.freecodecamp.org/steven-cao88">
+									<i class="fa fa-2x fa-free-code-camp text-muted" aria-hidden="true"></i>
+									<span class="sr-only">(Free Code Camp)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://stackoverflow.com/users/8374284/steven-cao">
+									<i class="fa fa-2x fa-stack-overflow text-muted" aria-hidden="true"></i>
+									<span class="sr-only">(Stack Overflow)</span>
+								</a>
+							</li>
+							<li class="nav-item align-items-center">
+								<a class="nav-link" href="https://www.hackerrank.com/mailboxofsteven?hr_r=1">HackerRank</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-1"></div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- to top icon -->
+		<div class="to-top-container">
+			<div class="to-top-icon">
+				<span class="arrow-up"></span>
+			</div>
+		</div>
+	</main>
+
+	<!-- side navigation -->
+	<div id="mySidenav" class="sidenav">
+		<!-- Links to external sites -->
+		<ul class="nav flex-row ml-md-auto d-none d-md-flex">
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.linkedin.com/in/steven-cao">
+					<i class="fa fa-linkedin text-muted" aria-hidden="true"></i>
+					<span class="sr-only">(LinkedIn)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://steven-cao88.github.io">
+					<i class="fa fa-github text-muted" aria-hidden="true"></i>
+					<span class="sr-only">(Github)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://codepen.io/steven-cao/">
+					<i class="fa fa-codepen text-muted" aria-hidden="true"></i>
+					<span class="sr-only">(Codepen)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.freecodecamp.org/steven-cao88">
+					<i class="fa fa-free-code-camp text-muted" aria-hidden="true"></i>
+					<span class="sr-only">(Free Code Camp)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://stackoverflow.com/users/8374284/steven-cao">
+					<i class="fa fa-stack-overflow text-muted" aria-hidden="true"></i>
+					<span class="sr-only">(Stack Overflow)</span>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.hackerrank.com/mailboxofsteven?hr_r=1">
+					HR
+					<span class="sr-only">(HackerRank)</span>
+				</a>
+			</li>
+		</ul>
+
+		<a href="#about-me">About me</a>
+		<a href="#about-me">What I do</a>
+		<a href="#timeline">Timeline</a>
+		<a href="#gallery">Gallery</a>
+		<a href="#location">Location</a>
 	</div>
 
-	
-<div id="mySidenav" class="sidenav">
-		<a href="#">About</a>
-		<a href="#">Services</a>
-		<a href="#">Clients</a>
-		<a href="#">Contact</a>
-	</div>
-
-
-	
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" rossorigin="anonymous"></script>
+	<!-- Popper.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>
+	<!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Customised JS -->
+    <script src="script.js"></script>
+    <!-- Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADGl3qC5dNJMBSGodb7StxfwBrPiOtNWk&callback=myMap"></script>
 </body>
 </html>
